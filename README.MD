@@ -13,7 +13,7 @@ My program is applied in Python programming language. With its package keras and
 ##Environment
 My python's version is 2.7.11. I recommend to install [Anaconda](https://www.continuum.io/downloads), a leading open data science platform powered by python, including almost python packages you need. And two additional packages, [OpenCV](http://opencv.org/) and [keras](https://github.com/fchollet/keras), should be installed.
 
-##Crwaling
+##Crawling
 To get enough faces of a AV actress, a good way is to crawl the covers of her films. These faces are full of expression. Then I found an available website(http://www.nh87.cn/), we can crawl the covers on it easily. If you cannot crawl them or there is something wrong on the website, you can ask me. My email is 2506596454@qq.com. 
 ```python
 import re
@@ -165,3 +165,13 @@ model.fit(X_train, Y_train, batch_size=batch_size, nb_epoch=nb_epoch,
           verbose=1, validation_data=(X_test, Y_test))
 score = model.evaluate(X_test, Y_test, verbose=0)
 ```
+##The training result
+![result](https://github.com/scnuhealthy/Recognize_the_AV_Actress/blob/master/result.png)
+> * Data: the faces of shangyuanyayi, seguguobu, zuozuomumingyi, xiaotianbumei
+> * Epoch: 128 times
+> * Accuaracy on test set: over 80%
+
+Dropout is very important. If you do this not well, you will get a good result on training set but much worse on test set. And the actresses you choose will have a great impact on the result. I try another dataset of boduoyejieyi, jizemingbu, tianhaiyi , jingxiangjulia, daqiaoweijiu, mrhql, baishimolinai, the accuaracy fells to 67%. I think the faces of those actresses are too similar to recognzie. 
+
+##Reference resources
+http://qiita.com/tmnck/items/af82deb04d432f1f4f6e
