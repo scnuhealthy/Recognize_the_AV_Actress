@@ -14,10 +14,6 @@ def url_open(url):
     html = response.read().decode('utf-8')
     return html
 
-def get_year(html,name):
-    s = '<a href="/'+name+'/[0-9]{4}/">([0-9]{4})</a>'
-    year_list = re.findall(s,html)
-    return year_list
 
 # get the image url
 def get_image(html):
