@@ -8,6 +8,7 @@ For example, it's difficult for human to regonize the women on the picture above
 > * crawl the photoes of the AV actress
 > * detect the the faces in the photo as the network's input
 > * build a CNN depp learing model  
+
 My program is applied in Python programming language. With its package keras and OpenCV, coding is not hard. Let us see the detail.
 
 ##Environment
